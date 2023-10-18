@@ -1,0 +1,21 @@
+<html>
+    <script>
+        class Product{
+            constructor(name1,price1){
+                this.name = name1;
+                this.price = price1;
+            }
+            displayProduct(){
+                console.log(this.name + " " + this.price);
+            }
+        }
+        let p1 = new Product("Cake","$55");
+        let p2 = new Product("Cupcakes","$4");
+
+        console.log(p1.name);
+
+        p1.displayProduct();
+        
+        //p1.displayProduct();
+    </script>
+</html>

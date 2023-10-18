@@ -1,0 +1,58 @@
+<html>
+    <script>
+        let fruitArray = ["apple","mango","banana"];
+        console.log(fruitArray[1]);
+
+        //Add item to the end
+        fruitArray.push("grapes'");
+        console.log(fruitArray);
+
+        //Add to the beginning
+        fruitArray.unshift("strawberry");
+        console.log(fruitArray);
+
+        //remove - pop operation
+        let somefruit = fruitArray.pop();
+        console.log(somefruit);
+
+        //remove fomr the beginning use shift
+        // let somefruit = fruitArray.shift();
+        // console.log(somefruit);
+
+        //forEach operation
+        function printlength(item){
+            console.log("array item is " + item + " & its length is " + item.length);
+        }
+        fruitArray.forEach(printlength);
+
+        //sample of filtering an Array
+        let ageArray = [2,56,67,100,45];
+        let resultArray = ageArray.filter(item => item>=50);
+        console.log(resultArray);
+
+        //sample of filtering
+        let c1 = {name:"A", age:12};
+        let c2 = {name:"B", age:92};
+        let c3 = {name:"C", age:10};
+        let c4 = {name:"D", age:12};
+
+        let cArray = [c1,c2,c3,c4];
+        //challenge is to print cArray with age > 50 only
+        
+        console.log(cArray);
+        for(let i of cArray){
+            if(i.age>=50){
+                console.log("The person with age greater than 50 is " + i.name)
+            }
+        }
+
+        // CHALLENGE:
+
+    // Given an array of 5 person objects 
+    //( Create a Person function having name and age, and then create 5 person objects)
+
+    // Use the for-of loop, to display only those persons whose age is less than 50.
+    
+    
+    </script>
+</html>
