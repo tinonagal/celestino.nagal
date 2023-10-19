@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MeetingComponent {
 
+  meetingTopic:string = "Cars to import";
+  participants:number = 100;
+  meetingDate:any = "10/12/2023";
+  meetingTime:any = "10:23";
 }

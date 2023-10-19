@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AddClientComponent } from './add-client/add-client.component';
 import { ClientComponent } from './client/client.component';
 import { MeetingComponent } from './meeting/meeting.component';
+import { Clientv2Component } from './clientv2/clientv2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddClientComponent,
     ClientComponent,
-    MeetingComponent
+    MeetingComponent,
+    Clientv2Component
   ],
   imports: [
     BrowserModule

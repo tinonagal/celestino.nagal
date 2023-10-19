@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddClientComponent } from './add-client.component';
+import { Clientv2Component } from './clientv2.component';
 
-describe('AddClientComponent', () => {
-  let component: AddClientComponent;
-  let fixture: ComponentFixture<AddClientComponent>;
+describe('Clientv2Component', () => {
+  let component: Clientv2Component;
+  let fixture: ComponentFixture<Clientv2Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AddClientComponent]
+      declarations: [Clientv2Component]
     });
-    fixture = TestBed.createComponent(AddClientComponent);
+    fixture = TestBed.createComponent(Clientv2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
