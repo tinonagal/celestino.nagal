@@ -1,0 +1,40 @@
+<div>
+    <h2>Create New Client</h2>
+    <form [formGroup]="clientForm">
+      <div class="form-group">
+        <label for="clientName">Client Name:</label><br>
+        <input id="clientName" formControlName="clientName" required placeholder="Enter Full Name">
+        <!-- <div *ngIf="clientForm.get('clientName')?.hasError('required')" class="error-message">Client Name is required.</div> -->
+      </div><br>
+      
+      <div class="form-group">
+        <label for="clientEmail">Client Email:</label><br>
+        <input id="clientEmail" formControlName="clientEmail" required placeholder="Enter Email">
+        <!-- <div *ngIf="clientForm.get('clientEmail')?.hasError('required')" class="error-message">Client Email is required.</div> -->
+      </div><br>
+
+      <div class="form-group">
+        <label for="clientAddress">Client Adress:</label><br>
+        <input id="clientAddress" formControlName="clientAddress" required placeholder="Enter Address">
+        <!-- <div *ngIf="clientForm.get('clientAddress')?.hasError('required')" class="error-message">Client Address is required.</div> -->
+      </div><br>
+
+      <div class="form-group">
+        <label for="clientAddress">Password:</label><br>
+        <input id="clientPassword" formControlName="clientPassword" required placeholder="Minimum 6 digits">
+        <!-- <div *ngIf="clientForm.get('clientPassword')?.hasError('required')" class="error-message">Client Password is required.</div>
+        <div *ngIf="clientForm.get('clientPassword')?.hasError('minlength')" class="error-message">Client Password must be at least 6 characters long.</div> -->
+    </div><br>
+  
+    <div class="form-group">
+        <label for="ReEnterPassword">Re Enter Password:</label><br>
+        <input id="ReEnterPassword" formControlName="ReEnterPassword" required placeholder="Enter same password">
+        <!-- <div *ngIf="clientForm.get('ReEnterPassword')?.hasError('required')" class="error-message">Client Password is required.</div>
+        <div *ngIf="clientForm.get('ReEnterPassword')?.hasError('minlength')" class="error-message">Client Password must be at least 6 characters long.</div> -->
+    </div>
+      
+    <br><br>
+  
+      <button (click)="createClient()" [disabled]="clientForm.invalid" class="btn btn-primary">Create Client</button>
+    </form>
+  </div>

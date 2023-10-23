@@ -1,0 +1,35 @@
+<div>
+    <h2>Create New Client</h2>
+    <form [formGroup]="meetingForm">
+      <div class="form-group">
+        <label for="meetingTopic">Meeting Topic:</label><br>
+        <input id="meetingTopic" formControlName="meetingTopic" required placeholder="Meeting Topic">
+        <!-- <div *ngIf="clientForm.get('clientName')?.hasError('required')" class="error-message">Client Name is required.</div> -->
+      </div><br>
+      
+      <div class="form-group">
+        <label for="Partcipants">Number of Participants:</label><br>
+        <input id="Partcipants" formControlName="Partcipants" required placeholder="Number of Participants">
+        <!-- <div *ngIf="clientForm.get('clientEmail')?.hasError('required')" class="error-message">Client Email is required.</div> -->
+      </div><br>
+
+      
+      <div class="form-group">
+        <label for="MeetingDate">Meeting Date:</label><br>
+        <input id="MeetingDate" formControlName="MeetingDate" type="date">
+        <!-- <div *ngIf="clientForm.get('clientPassword')?.hasError('required')" class="error-message">Client Password is required.</div>
+        <div *ngIf="clientForm.get('clientPassword')?.hasError('minlength')" class="error-message">Client Password must be at least 6 characters long.</div> -->
+    </div><br>
+  
+    <div class="form-group">
+        <label for="MeetingTime">Meeting Time:</label><br>
+        <input id="MeetingTime" formControlName="MeetingTime" type="time">
+        <!-- <div *ngIf="clientForm.get('ReEnterPassword')?.hasError('required')" class="error-message">Client Password is required.</div>
+        <div *ngIf="clientForm.get('ReEnterPassword')?.hasError('minlength')" class="error-message">Client Password must be at least 6 characters long.</div> -->
+    </div>
+      
+    <br><br>
+  
+      <button (click)="createMeeting()" [disabled]="meetingForm.invalid" class="btn btn-primary">Create Meeting</button>
+    </form>
+  </div>

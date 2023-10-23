@@ -1,19 +1,13 @@
 
 
-<div class="content" role="main">
-
-  <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
-
-    
-
-    <span>
-      <h1>Welcome to my Project {{ title }}</h1>
-
-      </span>
-    <br>   
-    <client></client>
-
-  </div>
-
+<ul class="horizontal-nav">
+  <!-- <li><a [routerLink]="['/home']">Client Home</a></li>   -->
   
+  <li><a [routerLink]="['/create-client']">Create Client</a></li>
+  <li><a [routerLink]="['/client-list']">Client List</a></li>
+  <li><a [routerLink]="['/create-meeting']">Create Meeting</a></li>
+  <li><a [routerLink]="['/meeting-list']">Meeting List</a></li>
+
+</ul>
+<hr><br><br>
+<router-outlet></router-outlet>

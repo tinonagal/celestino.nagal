@@ -1,0 +1,15 @@
+.error-message {
+    color: red;
+  }
+
+  div{
+    width: 50%;
+    border: 1px solid rgb(145, 138, 138);
+    border-radius: 25px;
+    padding: 0px 20% 20px 20px;
+    margin-left: 200px;
+    }
+
+    label{
+        font-weight: bold ;
+    }

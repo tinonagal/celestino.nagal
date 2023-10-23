@@ -1,0 +1,29 @@
+
+
+td, th {
+    border: 1px solid black;
+    overflow: auto;
+}
+
+table {
+    margin: 15px 0;
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 100%; /* must have this set */
+}
+
+body {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.sturdy th:nth-child(1),
+.sturdy th:nth-child(2),
+.sturdy th:nth-child(3),
+.sturdy th:nth-child(4),
+.sturdy th:nth-child(5) {
+    width: 20%;
+}
+      
+      
+      

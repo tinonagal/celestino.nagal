@@ -1,0 +1,19 @@
+<table border="1">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>ADDRESS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of client">
+        <td>{{ client.name }}</td>
+        <td>{{ client.email }}</td>
+        <td>{{ client.address }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+

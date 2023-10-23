@@ -1,0 +1,21 @@
+<table border="1">
+    <thead>
+      <tr>
+        <th>TOPIC</th>
+        <th>PARTICIPANTS</th>
+        <th>DATE</th>
+        <th>TIME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let meeting of meeting">
+        <td>{{meeting.topic}}</td>
+        <td>{{meeting.participants}}</td>
+        <td>{{meeting.date}}</td>
+        <td>{{meeting.time}}</td>
+        
+            <!-- <a [routerLink]="['/client', product.id]">Show Details</a> -->
+          
+      </tr>
+    </tbody>
+  </table>
