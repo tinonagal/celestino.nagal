@@ -13,6 +13,7 @@ export class CreateMeetingComponent {
   isMeetingTopicInvalid: boolean = false;
   isMeetingDateInvalid: boolean = false;
   isMeetingTimeInvalid: boolean = false;
+  isMeetingEndInvalid: boolean = false;
   isPartcipantsInvalid: boolean = false;
 
   constructor(private fb: FormBuilder, private meetingService: MeetingService){
@@ -20,7 +21,8 @@ export class CreateMeetingComponent {
       meetingTopic: ['',[Validators.required]],
       Partcipants: ['',[Validators.required]],
       MeetingDate: ['',[Validators.required]],
-      MeetingTime: ['',[Validators.required]]
+      MeetingTime: ['',[Validators.required]],
+      MeetingEnd: ['',[Validators.required]],
     });
   }
 

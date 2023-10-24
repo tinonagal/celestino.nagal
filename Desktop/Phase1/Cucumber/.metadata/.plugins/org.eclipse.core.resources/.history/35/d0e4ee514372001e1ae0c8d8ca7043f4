@@ -1,0 +1,12 @@
+#Author: tinonagal@gmail.com
+#Date: 24th October, 2023
+#Desciption: This is to validate create client flow
+#Keywirds: name, email, address, password, date, time
+Feature: feature to validate the client create for client-app project.
+
+  Scenario: Validate the information entered in the client create html page
+    Given: the user is in the create client page
+    When: The user enters name, address, email & password in the form
+    And: the user tries to leave an information blank
+    Then: the create button will grey out and won't work as each information is required
+

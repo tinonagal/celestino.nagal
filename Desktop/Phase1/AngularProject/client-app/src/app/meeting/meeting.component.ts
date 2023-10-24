@@ -8,7 +8,7 @@ import { Meeting } from '../model/meeting';
 })
 export class MeetingComponent {
 
-      meeting:Meeting = new Meeting("Cars to import",10,"10/12/2023","10:23");
+      meeting:Meeting = new Meeting("Cars to import",10,"10/12/2023","09:30","11:30");
   // topic:string = "Cars to import";
   // participants:number = 100;
   // meetingDate:any = "10/12/2023";
